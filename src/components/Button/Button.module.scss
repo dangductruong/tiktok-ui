@@ -1,0 +1,24 @@
+.wrapper{
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.primary{
+    color: white;
+    background-color: rgb(244, 86, 86);
+    &:hover{
+        background-color:rgb(193, 51, 51) ;
+    }
+}
+.outline{
+    color: rgb(244, 86, 86);
+    border-color:currentColor;
+    &:hover{
+       background-color: rgb(250, 226, 226)
+    }
+}
