@@ -7,6 +7,13 @@
     cursor: pointer;
     background-color: transparent;
     border: 1px solid transparent;
+    +.wrapper{
+        margin-left:8px ;
+    }
+    &.disable{
+        opacity: 0.5;
+        pointer-events:none;
+    }
 }
 .primary{
     color: white;
@@ -21,4 +28,21 @@
     &:hover{
        background-color: rgb(250, 226, 226)
     }
+}
+.rounded{
+    border-color: rgb(203, 201, 201);
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgb(0 0 0 /6%);
+    &:hover{
+border-color: rgba(22, 24, 35, 0.2);
+background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.small{
+    min-width: 88px;
+    padding: 4px 16px;
+}
+.big{
+    min-width: 140px;
+    padding: 14px 16px;
 }

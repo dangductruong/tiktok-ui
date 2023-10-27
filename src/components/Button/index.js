@@ -4,9 +4,23 @@ import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function Button({ to, href, outline = false, onClick, children, primary = false, ...passProps }) {
+function Button({
+    to,
+    href,
+    big = false,
+    small = false,
+    outline = false,
+    onClick,
+    disable = false,
+    rounded = false,
+    children,
+    leftIcon,
+    rightIcon,
+    primary = false,
+    ...passProps
+}) {
     let Comp = 'button';
-    const classes = cx('wrapper', { primary, outline });
+    const classes = cx('wrapper', { primary, outline, small, big, disable, rounded });
     const props = {
         onClick,
         ...passProps,
@@ -20,7 +34,9 @@ function Button({ to, href, outline = false, onClick, children, primary = false,
     }
     return (
         <Comp className={classes} {...props}>
+            {leftIcon && <span className={cx('icon')}>{leftIcon}</span>}
             <span>{children}</span>
+            {rightIcon && <span className={cx('icon')}>{leftIcon}</span>}
         </Comp>
     );
 }

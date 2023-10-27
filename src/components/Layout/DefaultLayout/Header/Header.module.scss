@@ -47,18 +47,19 @@ background-color: #eeeded;
     }
 }
 .clear,.loading{
-border: none;
-color: #b5b5b5;
-position: absolute;
-right: 52px;
-top: 50%;
-transform: translateY(-50%);
-padding-right: 16px;
+    border: none;
+    color: #b5b5b5;
+    position: absolute;
+    right: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 16px;
 }
 
+
 .search-btn{
-width: 52px;
-height: 100%;
+    width: 52px;
+    height: 100%;
 border: none;
 outline: none;
 border-radius: 92px;
@@ -69,4 +70,11 @@ color:#ada9a9 ;
 .search-btn:hover{
     cursor: pointer;
     background-color:#e0e0e0;
+}
+.more-btn{
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 8px;
+    margin: 0 14px;
 }
