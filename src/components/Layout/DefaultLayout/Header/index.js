@@ -22,7 +22,7 @@ const cx = classNames.bind(styles);
 const MENU_ITEMS = [
     { icon: <FontAwesomeIcon icon={faEarthAsia} />, title: 'English' },
     { icon: <FontAwesomeIcon icon={faCircleQuestion} />, title: 'Feedback and help', to: '/feedback' },
-    { icon: <FontAwesomeIcon icon={faKeyboard} />, title: 'keyboard shortcuts' },
+    { icon: <FontAwesomeIcon icon={faKeyboard} />, title: 'Keyboard shortcuts' },
 ];
 function Header() {
     const [searchResult, setSearchResult] = useState([]);

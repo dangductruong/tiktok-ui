@@ -1,4 +1,4 @@
-import Tippy from '@tippyjs/react';
+import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import Wrapper from '../Wrapper';
@@ -13,7 +13,7 @@ function Menu({ children, items = [] }) {
             interactive
             placement="bottom-end"
             render={(attrs) => (
-                <div className={cx('content')} tabIndex="-1" {...attrs}>
+                <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
                     <Wrapper>{renderItems()}</Wrapper>
                 </div>
             )}

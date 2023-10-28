@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300;1,600;1,700&display=swap');
 :root{
     --primary: #fe2c55
 }
@@ -19,7 +18,14 @@ body{
 }
 a{
     text-decoration: none;
-    color: black;
+   color: #333;
     display: block;
-   
+    font-size: 1.4rem;
+}
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
